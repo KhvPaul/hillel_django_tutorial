@@ -4,7 +4,7 @@ from django.urls import reverse
 from django.utils import timezone
 from django.views import generic
 
-from .models import Question, Choice
+from .models import Choice, Question
 
 
 # def index(request):
