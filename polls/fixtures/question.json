@@ -1,0 +1,1 @@
+[{"model": "polls.question", "pk": 1, "fields": {"question_text": "Quextion 1", "pub_date": null}}, {"model": "polls.question", "pk": 2, "fields": {"question_text": "Question 2", "pub_date": null}}, {"model": "polls.question", "pk": 3, "fields": {"question_text": "Question 3", "pub_date": null}}]

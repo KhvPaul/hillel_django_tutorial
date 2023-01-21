@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-lw+8ul@-i9yuw21#f@x2r#0#76wm$^_+y6c%u+l3tw(o1$re64'
 SECRET_KEY = os.environ.get("SECRET_KEY")
-print("SECRET_KEY -> ", SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_extensions',
 
     'polls'
 ]
