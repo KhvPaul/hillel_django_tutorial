@@ -16,8 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from polls.views import current_datetime, your_name
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('polls/', include('polls.urls')),
+
+    path("current-datetime/", current_datetime, name='current-datetime'),
+    path("your_name/", your_name, name='your-name')
 ]
