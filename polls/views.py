@@ -81,14 +81,15 @@ def current_datetime(request):
 def your_name(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
+
         # create a form instance and populate it with data from the request:
         form = NameForm(request.POST)
         # check whether it's valid:
-        if False:
+        if form.is_valid():
             # process the data in form.cleaned_data as required
             form.clean()
             form.cleaned_data.get("name")
-            ...
+            print("View has been called")
             # redirect to a new URL:
             return redirect(reverse("your-name"))
 

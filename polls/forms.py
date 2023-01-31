@@ -8,9 +8,9 @@ from .models import Question
 class NameForm(forms.Form):
     name = forms.IntegerField(label='Your name', min_value=0)
     subject = forms.CharField(max_length=100)
-    message = forms.CharField(widget=forms.Textarea)
-    sender = forms.EmailField()
-    cc_myself = forms.BooleanField(required=False)
+    # message = forms.CharField(widget=forms.Textarea)
+    # sender = forms.EmailField()
+    # cc_myself = forms.BooleanField(required=False)
 
 
 # class QuestionCreateForm(forms.Form):
